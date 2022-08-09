@@ -297,7 +297,7 @@ a:hover {
     top: 280px;
     left: 50%;
     margin-left: -400px;
-    padding-top: 400px;
+    margin-top: 400px;
     padding: 50px 0;
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     transition: all 0.3s;
