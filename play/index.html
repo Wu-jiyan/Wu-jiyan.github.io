@@ -5,12 +5,24 @@
 
 <title>游戏列表 - 基岩的小站</title>
 <link rel="bookmark" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="shortcut icon" href="https://wujiyan.tk/assets/favicon.ico">
 
 
 
 
 <link rel="stylesheet" href="./main.css">
 <link rel="stylesheet" href="./css/bootstrap.min.css">
+<style>
+*{ margin:0; padding:0; list-style:none;}
+img{ border:0;}
+
+.header{ width:100%; background:#F5F5F5; position:fixed; top:0; opacity:0.9;}
+.nav{ width:1000px; margin:0 auto; overflow:hidden;}
+.nav ul li{ height:40px; line-height:40px; float:left; padding:10px 5px; margin:0px 5px;position:relative;}
+.nav ul li a{ color:#666; font-family:&#x27;Microsoft Yahei&#x27;; font-size:14px; text-decoration:none;}
+.nav ul li a:hover{ color:#000; text-decoration:none;}
+.nav ul li span{ display:block; position:absolute; width:0px; height:0px; background:#1FAEFF; top:58px; left:50%;}
+</style>
 
 
 
@@ -55,6 +67,39 @@
             </style></head>
 
 <body>
+<!-- 代码begin -->
+<div class="header">
+<div class="nav">
+	<ul>
+          <li><a href="/"><img src="https://wujiyan.tk/assets/favicon.ico" height="40px"</a></li>
+	<li><a href="/">首页</a><span></span></li>
+    	<li><a href="/list">网站列表</a><span></span></li>
+    	<li><a href="https://blog.wujiyan.tk/">基岩的博客</a><span></span></li>
+    	<li><a href="https://domain.wujiyan.tk/">基岩二级域名分发</a><span></span></li>
+    	<li><a href="https://image.wujiyan.tk/">基岩云图床</a><span></span></li>
+    	<li><a href="https://chat.wujiyan.tk/">基岩云聊吧</a><span></span></li>
+	</ul>
+</div>
+</div>
+<script>
+$(function(){
+	$('.nav li').hover(function(){
+		$('span',this).stop().css('height','2px');
+		$('span',this).animate({
+			left:'0',
+			width:'100%',
+			right:'0'
+		},200);
+	},function(){
+		$('span',this).stop().animate({
+			left:'50%',
+			width:'0'
+		},200);
+	});
+});
+</script>
+<!-- 代码end -->
+
 <div class="main gt-bg-theme-color-first">
         <div class="main-content">
             
