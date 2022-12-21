@@ -130,7 +130,8 @@ a:hover {
 }
 
 .Box3 {
-    background: url(../image/bg3.png) no-repeat center center;
+    background: url(../image/bg2.png) no-repeat center center;
+    margin-top: 30%
 }
 
 .Box4 {
