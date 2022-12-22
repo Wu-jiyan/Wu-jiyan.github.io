@@ -199,7 +199,7 @@ a:hover {
     margin: 40px auto 0;
     opacity: 0;
     animation: OutBottom 1s ease 1s 1 forwards;
-}
+} 
 
 .Box1-title-Buttom:hover {
     color: white;
