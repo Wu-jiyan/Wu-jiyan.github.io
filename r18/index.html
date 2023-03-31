@@ -1,17 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>❤️站❤️长❤️推❤️荐❤️</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190316399-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-190316399-3');
-    </script>
     <style type="text/css">
         p {
             margin: 0;
@@ -112,7 +104,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url(https://iw233.cn/api.php?sort=mp);
+            background-image: url(https://www.loliapi.com/acg/);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center 0;
@@ -155,32 +147,27 @@
         </div>
     </div>
     <div class="scare">
-        <video id="video" class="video" src="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4"
-            loop="loop"></video>
-        <img src="https://count.getloli.com/get/@rickroll" style="display: none;">
+        <video id="video" class="video" src="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4"></video>
     </div>
     <script type="text/javascript">
         const video = document.getElementById("video");
         const overlay = document.getElementById("overlay");
         const declineButton = document.getElementById("decline-button");
         const acceptButton = document.getElementById("accept-button");
-        let hasClicked;
-        window.onbeforeunload = function () {
-            if (hasClicked) return true;
-        };
+        video.addEventListener("ended", function () {
+            window.location.href = "https://arcxingye.github.io/rr/qrcode";
+        });
         function buttonClick1(event) {
             event.preventDefault();
-            if (!hasClicked) hasClicked = true;
             overlay.hidden = true;
             video.play();
             videoClick();
         }
         function buttonClick2(event) {
-            window.location.href = 'https://xingye.me/game/index.php'
+            window.open("https://xingye.me/game/index.php");
         }
         function videoClick(event) {
             if (event) event.preventDefault();
-            // if not fullscreen
             const { documentElement } = document;
             if (documentElement.requestFullscreen) documentElement.requestFullscreen();
             else if (documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
@@ -192,3 +179,5 @@
         video.addEventListener("click", videoClick);
     </script>
 </body>
+
+</html>
